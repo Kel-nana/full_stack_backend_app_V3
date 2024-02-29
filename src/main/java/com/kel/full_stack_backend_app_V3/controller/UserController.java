@@ -21,7 +21,7 @@ public class UserController {
         return userRepository.save(newUser);
     }
 
-    @GetMapping("/user")
+    @GetMapping("/users")
     List<User> getAllUsers() {
         return userRepository.findAll();
     }
